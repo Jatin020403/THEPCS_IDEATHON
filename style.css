@@ -1,9 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  /* background-image: url("./images/body_bg.png"); */
   background-color: #f0eee2;
-  /* font-family: "Poppins", sans-serif; */
 }
 
 body{
@@ -21,6 +19,8 @@ body{
   position: relative;
 }
 
+/********************** Nav ************************/
+
 nav {
   display: flex;
   position:fixed;
@@ -29,9 +29,6 @@ nav {
   justify-content: space-between;
   align-items: center;
   z-index: 100;
-  /* background-image: url("./images/body_bg.png"); */
-
-  /* background-color: #f0eee2; */
   height: 35px;
   width: 90vw;
   border-bottom: groove;
@@ -52,7 +49,6 @@ nav img {
 }
 
 .nav-links ul li {
-  /* background-color: #f44336; */
   list-style: none;
   display: inline-block;
   padding: 0px 24px;
@@ -88,7 +84,6 @@ nav img {
   left: 50%;
   transform: translate(-50%,
       -45%);
-  /* here it takes -50 percent of it's own height, hence alligns to the center */
   
 
   text-align: center;
@@ -157,8 +152,6 @@ nav img {
 .articles{
   padding: 15vw 5vh;
   max-width: 900px;
-  /* display: flex;
-  justify-content: center; */
   margin: 0 auto;
 }
 
@@ -174,19 +167,21 @@ nav img {
   
 }
 
-/********************** Section ************************/
-
-.articles .main_page{
-  height: 100vh;
-}
-
-.articles .main_page div {
-  margin: auto;
-  width:40vw ;
-  padding: 10px;
-}
-
 /********************** Footer ************************/
 .footer{
   text-align: center;
+}
+
+
+.footer span a{
+  text-decoration: inherit;
+  color: inherit;
+}
+
+.footer span a{
+  transition: color 0.5s;
+}
+
+.footer span:hover{
+  color: #f00;
 }
