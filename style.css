@@ -1,12 +1,19 @@
 * {
   margin: 0;
   padding: 0;
+  /* background-image: url("./images/body_bg.png"); */
+  background-color: #f0eee2;
   /* font-family: "Poppins", sans-serif; */
+}
+
+body{
+  background-color: #f0eee2;
 }
 
 .hero {
   min-height: 100vh;
   width: 100%;
+  margin-top: 40px;
   background-image: url("./images/WhatsApp\ Image\ 2022-09-17\ at\ 00.32.02.jpeg");
   background-repeat: no-repeat;
   background-size: 100vw 100vh;
@@ -16,11 +23,19 @@
 
 nav {
   display: flex;
+  position:fixed;
+  margin-top: -40px;
   padding: 2% 6%;
   justify-content: space-between;
   align-items: center;
+  z-index: 100;
+  /* background-image: url("./images/body_bg.png"); */
 
-  /* background-color: #f0eee2 */
+  /* background-color: #f0eee2; */
+  height: 35px;
+  width: 90vw;
+  border-bottom: groove;
+  
 }
 
 nav img {
@@ -33,6 +48,7 @@ nav img {
 .nav-links {
   flex: 1;
   text-align: right;
+  
 }
 
 .nav-links ul li {
@@ -65,7 +81,8 @@ nav img {
 
 .text-box {
   width: 90%;
-  color: #888;
+  /* color: #888; */
+  background-color: transparent;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -82,11 +99,13 @@ nav img {
 }
 
 .text-box h1 {
+  background-color: transparent;
   font-size: 62px;
   color: #000;
 }
 
 .text-box p {
+  background-color: transparent;
   margin: 10px 0 40px;
   font-size: 25px;
   color: #000;
@@ -136,32 +155,38 @@ nav img {
 /*--------------------- Articles -----------------------*/
 
 .articles{
-  margin: 0px 0px;
-  min-height: 100vh;
-  width: 100%;
-  position: relative;
+  padding: 15vw 5vh;
+  max-width: 900px;
+  /* display: flex;
+  justify-content: center; */
+  margin: 0 auto;
 }
 
-#article1 {
-  background-image: url("./images/bgalien.png");
-  background-repeat: no-repeat;
-  background-size: 100vw 100vh;
-  background-position: center;
-  position: relative;
-
+.articles img {
+  width:90vw;
+  max-width: 900px;
 }
 
-#article1 p {
-  position: absolute;
-  top: 40%;
-  margin: 0 5%;
-  color: #13F5F3;
+#articles p {
   font-family: 'InterRegular';
   font-weight: normal;
   font-style: normal;
+  
 }
 
-/* .articles p {
-  font-size: 14px;
-  color: #000;
-} */
+/********************** Section ************************/
+
+.articles .main_page{
+  height: 100vh;
+}
+
+.articles .main_page div {
+  margin: auto;
+  width:40vw ;
+  padding: 10px;
+}
+
+/********************** Footer ************************/
+.footer{
+  text-align: center;
+}
