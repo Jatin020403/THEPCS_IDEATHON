@@ -167,47 +167,26 @@ nav img {
   max-width: 900px;
 }
 
-
-/* #article1 { */
-  
-  /* background-image: url("./images/body_bg.png"); */
-  /* background-repeat: no-repeat; */
-  /* background-size: 100vw 100vh; */
-  /* background-position: center; */
-  /* position: relative; */
-
-/* } */
-
 #articles p {
-  /* position: absolute;
-  top: 40%;
-  margin: 0 5%;
-  color: #13F5F3; */
   font-family: 'InterRegular';
   font-weight: normal;
   font-style: normal;
   
 }
 
-/* .articles p {
-  font-size: 14px;
-  color: #000;
-} */
-
 /********************** Section ************************/
 
 .articles .main_page{
   height: 100vh;
-  /* margin: auto; */
-
-    /* border: 3px solid green; */
-    
 }
 
 .articles .main_page div {
   margin: auto;
   width:40vw ;
-
-  /* border: 3px solid green; */
   padding: 10px;
+}
+
+/********************** Footer ************************/
+.footer{
+  text-align: center;
 }
